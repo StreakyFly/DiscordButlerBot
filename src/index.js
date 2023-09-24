@@ -1,7 +1,8 @@
-require('dotenv').config('./.env');
+require('dotenv').config({path: '../.env'});
 const { Client, Collection, GatewayIntentBits } = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');
+
 
 const client = new Client({
     intents: [

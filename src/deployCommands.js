@@ -3,7 +3,7 @@ Code from: https://discordjs.guide/creating-your-bot/command-deployment.html#com
 */
 
 
-require('dotenv').config('./.env');
+require('dotenv').config({path: '../.env'});
 const { REST, Routes } = require('discord.js');
 const fs = require('node:fs');
 const path = require('node:path');
